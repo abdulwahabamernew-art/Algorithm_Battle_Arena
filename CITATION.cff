@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+title: "Algorithm Battle Arena"
+message: "If you use this project in teaching, research, or benchmarking, please cite it."
+type: software
+authors:
+  - family-names: Amer
+    given-names: Abdulwahab Yahya Mohammed
+    affiliation: "Independent educational project"
+version: 1.0.0
+date-released: 2026-11-06
+repository-code: "https://github.com/abdulwahabamernew-art/Algorithm_Battle_Arena"
+license: MIT
+keywords:
+  - algorithms
+  - benchmarking
+  - computer science education
+  - sorting
+  - pathfinding
