@@ -1,0 +1,369 @@
+{
+  "schema_version": 1,
+  "algorithm": "quick",
+  "input": [
+    8,
+    3,
+    5,
+    1,
+    3,
+    -2
+  ],
+  "output": [
+    -2,
+    1,
+    3,
+    3,
+    5,
+    8
+  ],
+  "initial_tags": [
+    "8",
+    "3(\u0623)",
+    "5",
+    "1",
+    "3(\u0628)",
+    "-2"
+  ],
+  "metrics": {
+    "comparisons": 13,
+    "swaps": 4,
+    "writes": 8,
+    "aux_writes": 0,
+    "total_writes": 8,
+    "max_aux_space": 2,
+    "total_events": 27,
+    "recorded_events": 27,
+    "trace_truncated": false,
+    "stable_theoretical": false
+  },
+  "events": [
+    {
+      "step": 1,
+      "kind": "start",
+      "array": [
+        8,
+        3,
+        5,
+        1,
+        3,
+        -2
+      ]
+    },
+    {
+      "step": 2,
+      "kind": "pivot",
+      "index": 5,
+      "value": -2,
+      "lo": 0,
+      "hi": 6
+    },
+    {
+      "step": 3,
+      "kind": "compare",
+      "indices": [
+        0,
+        5
+      ],
+      "values": [
+        8,
+        -2
+      ],
+      "operator": "<=",
+      "result": false,
+      "source": "array"
+    },
+    {
+      "step": 4,
+      "kind": "compare",
+      "indices": [
+        1,
+        5
+      ],
+      "values": [
+        3,
+        -2
+      ],
+      "operator": "<=",
+      "result": false,
+      "source": "array"
+    },
+    {
+      "step": 5,
+      "kind": "compare",
+      "indices": [
+        2,
+        5
+      ],
+      "values": [
+        5,
+        -2
+      ],
+      "operator": "<=",
+      "result": false,
+      "source": "array"
+    },
+    {
+      "step": 6,
+      "kind": "compare",
+      "indices": [
+        3,
+        5
+      ],
+      "values": [
+        1,
+        -2
+      ],
+      "operator": "<=",
+      "result": false,
+      "source": "array"
+    },
+    {
+      "step": 7,
+      "kind": "compare",
+      "indices": [
+        4,
+        5
+      ],
+      "values": [
+        3,
+        -2
+      ],
+      "operator": "<=",
+      "result": false,
+      "source": "array"
+    },
+    {
+      "step": 8,
+      "kind": "swap",
+      "indices": [
+        0,
+        5
+      ],
+      "values": [
+        -2,
+        8
+      ]
+    },
+    {
+      "step": 9,
+      "kind": "partition",
+      "lo": 0,
+      "hi": 6,
+      "pivot_index": 0
+    },
+    {
+      "step": 10,
+      "kind": "pivot",
+      "index": 5,
+      "value": 8,
+      "lo": 1,
+      "hi": 6
+    },
+    {
+      "step": 11,
+      "kind": "compare",
+      "indices": [
+        1,
+        5
+      ],
+      "values": [
+        3,
+        8
+      ],
+      "operator": "<=",
+      "result": true,
+      "source": "array"
+    },
+    {
+      "step": 12,
+      "kind": "compare",
+      "indices": [
+        2,
+        5
+      ],
+      "values": [
+        5,
+        8
+      ],
+      "operator": "<=",
+      "result": true,
+      "source": "array"
+    },
+    {
+      "step": 13,
+      "kind": "compare",
+      "indices": [
+        3,
+        5
+      ],
+      "values": [
+        1,
+        8
+      ],
+      "operator": "<=",
+      "result": true,
+      "source": "array"
+    },
+    {
+      "step": 14,
+      "kind": "compare",
+      "indices": [
+        4,
+        5
+      ],
+      "values": [
+        3,
+        8
+      ],
+      "operator": "<=",
+      "result": true,
+      "source": "array"
+    },
+    {
+      "step": 15,
+      "kind": "partition",
+      "lo": 1,
+      "hi": 6,
+      "pivot_index": 5
+    },
+    {
+      "step": 16,
+      "kind": "pivot",
+      "index": 4,
+      "value": 3,
+      "lo": 1,
+      "hi": 5
+    },
+    {
+      "step": 17,
+      "kind": "compare",
+      "indices": [
+        1,
+        4
+      ],
+      "values": [
+        3,
+        3
+      ],
+      "operator": "<=",
+      "result": true,
+      "source": "array"
+    },
+    {
+      "step": 18,
+      "kind": "compare",
+      "indices": [
+        2,
+        4
+      ],
+      "values": [
+        5,
+        3
+      ],
+      "operator": "<=",
+      "result": false,
+      "source": "array"
+    },
+    {
+      "step": 19,
+      "kind": "compare",
+      "indices": [
+        3,
+        4
+      ],
+      "values": [
+        1,
+        3
+      ],
+      "operator": "<=",
+      "result": true,
+      "source": "array"
+    },
+    {
+      "step": 20,
+      "kind": "swap",
+      "indices": [
+        2,
+        3
+      ],
+      "values": [
+        1,
+        5
+      ]
+    },
+    {
+      "step": 21,
+      "kind": "swap",
+      "indices": [
+        3,
+        4
+      ],
+      "values": [
+        3,
+        5
+      ]
+    },
+    {
+      "step": 22,
+      "kind": "partition",
+      "lo": 1,
+      "hi": 5,
+      "pivot_index": 3
+    },
+    {
+      "step": 23,
+      "kind": "pivot",
+      "index": 2,
+      "value": 1,
+      "lo": 1,
+      "hi": 3
+    },
+    {
+      "step": 24,
+      "kind": "compare",
+      "indices": [
+        1,
+        2
+      ],
+      "values": [
+        3,
+        1
+      ],
+      "operator": "<=",
+      "result": false,
+      "source": "array"
+    },
+    {
+      "step": 25,
+      "kind": "swap",
+      "indices": [
+        1,
+        2
+      ],
+      "values": [
+        1,
+        3
+      ]
+    },
+    {
+      "step": 26,
+      "kind": "partition",
+      "lo": 1,
+      "hi": 3,
+      "pivot_index": 1
+    },
+    {
+      "step": 27,
+      "kind": "done",
+      "array": [
+        -2,
+        1,
+        3,
+        3,
+        5,
+        8
+      ]
+    }
+  ]
+}

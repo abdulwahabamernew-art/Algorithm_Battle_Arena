@@ -1,0 +1,7 @@
+algorithm,n,repeats,comparisons,swaps,writes,aux_writes,total_writes,max_aux_space,median_ns,min_ns,max_ns
+merge,6,7,10,0,16,16,32,9,10650,10127,15602
+quick,6,7,13,4,8,0,8,2,10059,9085,32007
+quick3,6,7,21,12,24,0,24,2,11615,9900,37795
+heap,6,7,12,8,16,0,16,0,7700,6964,12528
+insertion,6,7,14,12,24,0,24,0,2901,2581,7048
+selection,6,7,15,4,8,0,8,0,3731,3148,5894

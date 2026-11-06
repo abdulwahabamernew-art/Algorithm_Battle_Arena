@@ -1,0 +1,460 @@
+{
+  "schema_version": 1,
+  "algorithm": "insertion",
+  "input": [
+    8,
+    3,
+    5,
+    1,
+    3,
+    -2
+  ],
+  "output": [
+    -2,
+    1,
+    3,
+    3,
+    5,
+    8
+  ],
+  "initial_tags": [
+    "8",
+    "3(\u0623)",
+    "5",
+    "1",
+    "3(\u0628)",
+    "-2"
+  ],
+  "metrics": {
+    "comparisons": 14,
+    "swaps": 12,
+    "writes": 24,
+    "aux_writes": 0,
+    "total_writes": 24,
+    "max_aux_space": 0,
+    "total_events": 33,
+    "recorded_events": 33,
+    "trace_truncated": false,
+    "stable_theoretical": true
+  },
+  "events": [
+    {
+      "step": 1,
+      "kind": "start",
+      "array": [
+        8,
+        3,
+        5,
+        1,
+        3,
+        -2
+      ]
+    },
+    {
+      "step": 2,
+      "kind": "pivot",
+      "index": 1,
+      "value": 3,
+      "lo": 0,
+      "hi": 2
+    },
+    {
+      "step": 3,
+      "kind": "compare",
+      "indices": [
+        0,
+        1
+      ],
+      "values": [
+        8,
+        3
+      ],
+      "operator": ">",
+      "result": true,
+      "source": "array"
+    },
+    {
+      "step": 4,
+      "kind": "swap",
+      "indices": [
+        0,
+        1
+      ],
+      "values": [
+        3,
+        8
+      ]
+    },
+    {
+      "step": 5,
+      "kind": "pivot",
+      "index": 2,
+      "value": 5,
+      "lo": 0,
+      "hi": 3
+    },
+    {
+      "step": 6,
+      "kind": "compare",
+      "indices": [
+        1,
+        2
+      ],
+      "values": [
+        8,
+        5
+      ],
+      "operator": ">",
+      "result": true,
+      "source": "array"
+    },
+    {
+      "step": 7,
+      "kind": "swap",
+      "indices": [
+        1,
+        2
+      ],
+      "values": [
+        5,
+        8
+      ]
+    },
+    {
+      "step": 8,
+      "kind": "compare",
+      "indices": [
+        0,
+        1
+      ],
+      "values": [
+        3,
+        5
+      ],
+      "operator": ">",
+      "result": false,
+      "source": "array"
+    },
+    {
+      "step": 9,
+      "kind": "pivot",
+      "index": 3,
+      "value": 1,
+      "lo": 0,
+      "hi": 4
+    },
+    {
+      "step": 10,
+      "kind": "compare",
+      "indices": [
+        2,
+        3
+      ],
+      "values": [
+        8,
+        1
+      ],
+      "operator": ">",
+      "result": true,
+      "source": "array"
+    },
+    {
+      "step": 11,
+      "kind": "swap",
+      "indices": [
+        2,
+        3
+      ],
+      "values": [
+        1,
+        8
+      ]
+    },
+    {
+      "step": 12,
+      "kind": "compare",
+      "indices": [
+        1,
+        2
+      ],
+      "values": [
+        5,
+        1
+      ],
+      "operator": ">",
+      "result": true,
+      "source": "array"
+    },
+    {
+      "step": 13,
+      "kind": "swap",
+      "indices": [
+        1,
+        2
+      ],
+      "values": [
+        1,
+        5
+      ]
+    },
+    {
+      "step": 14,
+      "kind": "compare",
+      "indices": [
+        0,
+        1
+      ],
+      "values": [
+        3,
+        1
+      ],
+      "operator": ">",
+      "result": true,
+      "source": "array"
+    },
+    {
+      "step": 15,
+      "kind": "swap",
+      "indices": [
+        0,
+        1
+      ],
+      "values": [
+        1,
+        3
+      ]
+    },
+    {
+      "step": 16,
+      "kind": "pivot",
+      "index": 4,
+      "value": 3,
+      "lo": 0,
+      "hi": 5
+    },
+    {
+      "step": 17,
+      "kind": "compare",
+      "indices": [
+        3,
+        4
+      ],
+      "values": [
+        8,
+        3
+      ],
+      "operator": ">",
+      "result": true,
+      "source": "array"
+    },
+    {
+      "step": 18,
+      "kind": "swap",
+      "indices": [
+        3,
+        4
+      ],
+      "values": [
+        3,
+        8
+      ]
+    },
+    {
+      "step": 19,
+      "kind": "compare",
+      "indices": [
+        2,
+        3
+      ],
+      "values": [
+        5,
+        3
+      ],
+      "operator": ">",
+      "result": true,
+      "source": "array"
+    },
+    {
+      "step": 20,
+      "kind": "swap",
+      "indices": [
+        2,
+        3
+      ],
+      "values": [
+        3,
+        5
+      ]
+    },
+    {
+      "step": 21,
+      "kind": "compare",
+      "indices": [
+        1,
+        2
+      ],
+      "values": [
+        3,
+        3
+      ],
+      "operator": ">",
+      "result": false,
+      "source": "array"
+    },
+    {
+      "step": 22,
+      "kind": "pivot",
+      "index": 5,
+      "value": -2,
+      "lo": 0,
+      "hi": 6
+    },
+    {
+      "step": 23,
+      "kind": "compare",
+      "indices": [
+        4,
+        5
+      ],
+      "values": [
+        8,
+        -2
+      ],
+      "operator": ">",
+      "result": true,
+      "source": "array"
+    },
+    {
+      "step": 24,
+      "kind": "swap",
+      "indices": [
+        4,
+        5
+      ],
+      "values": [
+        -2,
+        8
+      ]
+    },
+    {
+      "step": 25,
+      "kind": "compare",
+      "indices": [
+        3,
+        4
+      ],
+      "values": [
+        5,
+        -2
+      ],
+      "operator": ">",
+      "result": true,
+      "source": "array"
+    },
+    {
+      "step": 26,
+      "kind": "swap",
+      "indices": [
+        3,
+        4
+      ],
+      "values": [
+        -2,
+        5
+      ]
+    },
+    {
+      "step": 27,
+      "kind": "compare",
+      "indices": [
+        2,
+        3
+      ],
+      "values": [
+        3,
+        -2
+      ],
+      "operator": ">",
+      "result": true,
+      "source": "array"
+    },
+    {
+      "step": 28,
+      "kind": "swap",
+      "indices": [
+        2,
+        3
+      ],
+      "values": [
+        -2,
+        3
+      ]
+    },
+    {
+      "step": 29,
+      "kind": "compare",
+      "indices": [
+        1,
+        2
+      ],
+      "values": [
+        3,
+        -2
+      ],
+      "operator": ">",
+      "result": true,
+      "source": "array"
+    },
+    {
+      "step": 30,
+      "kind": "swap",
+      "indices": [
+        1,
+        2
+      ],
+      "values": [
+        -2,
+        3
+      ]
+    },
+    {
+      "step": 31,
+      "kind": "compare",
+      "indices": [
+        0,
+        1
+      ],
+      "values": [
+        1,
+        -2
+      ],
+      "operator": ">",
+      "result": true,
+      "source": "array"
+    },
+    {
+      "step": 32,
+      "kind": "swap",
+      "indices": [
+        0,
+        1
+      ],
+      "values": [
+        -2,
+        1
+      ]
+    },
+    {
+      "step": 33,
+      "kind": "done",
+      "array": [
+        -2,
+        1,
+        3,
+        3,
+        5,
+        8
+      ]
+    }
+  ]
+}

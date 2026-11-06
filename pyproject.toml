@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "algorithm-battle-arena"
+version = "1.0.0"
+description = "Interactive Algorithm Visualization, Empirical Benchmarking, and Asymptotic Scaling Lab (Sorting, Searching, Graph Pathfinding & Smart Advisor)."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+  {name = "Abdulwahab Yahya Mohammed Amer"}
+]
+keywords = ["algorithms", "sorting", "searching", "pathfinding", "benchmarking", "gradio", "education", "big-o"]
+dependencies = [
+  "gradio>=5.0.0"
+]
+
+[project.scripts]
+algorithm-arena = "arena.__main__:main"

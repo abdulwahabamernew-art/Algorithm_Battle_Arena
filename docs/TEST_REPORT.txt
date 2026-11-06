@@ -1,0 +1,24 @@
+test_every_algorithm_receives_same_input (test_analysis.ComparisonTests.test_every_algorithm_receives_same_input) ... ok
+test_scaling_sweep_and_report (test_analysis.ComparisonTests.test_scaling_sweep_and_report) ... ok
+test_signed_visual_and_replay (test_analysis.ComparisonTests.test_signed_visual_and_replay) ... ok
+test_sorted_quick_worst_case_and_manual_validation (test_analysis.ComparisonTests.test_sorted_quick_worst_case_and_manual_validation) ... ok
+test_advisor_and_quiz (test_arenas.NewArenasTests.test_advisor_and_quiz) ... ok
+test_graph_pathfinding (test_arenas.NewArenasTests.test_graph_pathfinding) ... ok
+test_searching_algorithms (test_arenas.NewArenasTests.test_searching_algorithms) ... ok
+test_cli_exports_and_errors (test_benchmark.BenchmarkTests.test_cli_exports_and_errors) ... ok
+test_timer_and_repeat_contract (test_benchmark.BenchmarkTests.test_timer_and_repeat_contract) ... ok
+test_counts_and_limit (test_core.ContractTests.test_counts_and_limit) ... ok
+test_disabled_trace (test_core.ContractTests.test_disabled_trace) ... ok
+test_validation_and_copy (test_core.ContractTests.test_validation_and_copy) ... ok
+test_exhaustive_and_seeded (test_sorting.SortingTests.test_exhaustive_and_seeded) ... ok
+test_invalid (test_sorting.SortingTests.test_invalid) ... ok
+test_known_counts_and_quick3_improvement (test_sorting.SortingTests.test_known_counts_and_quick3_improvement) ... ok
+test_large_adversarial_quick (test_sorting.SortingTests.test_large_adversarial_quick) ... ok
+test_replay_and_metrics (test_sorting.SortingTests.test_replay_and_metrics) ... ok
+test_parse_and_limits (test_ui_helpers.UIHelperTests.test_parse_and_limits) ... ok
+test_replay_finishes_at_output_and_preserves_merge_stability (test_ui_helpers.UIHelperTests.test_replay_finishes_at_output_and_preserves_merge_stability) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 1.909s
+
+OK
